@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Primer from './Primer'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
