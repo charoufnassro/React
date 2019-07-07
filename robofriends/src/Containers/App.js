@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import CardList from '../Components/CardList'
 import SearchBox from '../SearchBox'
 import Scroll from '../Components/Scroll'
+import ErrorBoundry from '../Components/ErrorBoundry'
 
 class App extends Component {
 
@@ -39,7 +40,9 @@ class App extends Component {
                         ? 
                             <h2 className="pa3 ma0 light-green">Loading...</h2>
                         : ( <Scroll>
-                                <CardList R={filterRobots}/>
+                                <ErrorBoundry>
+                                    <CardList R={filterRobots}/>
+                                </ErrorBoundry>
                             </Scroll>
                         )
                             
