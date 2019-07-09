@@ -5,7 +5,7 @@ const ContactPage = () => {
     return (
         <LayoutComponent>
             <h1>Contact</h1>
-            <h2>Hello from contact page</h2>
+            <p>The best way to reach me is via <a href="/#">@facebook/me</a> Facebook</p>
         </LayoutComponent>
     )
 }
