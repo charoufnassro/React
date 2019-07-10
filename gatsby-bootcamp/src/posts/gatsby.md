@@ -5,6 +5,8 @@ date: "2019-07-08"
 
 I just launch a new bootcamp
 
+![gatsby](../images/gatsby.jpg)
+
 ## Topics Covered
 
 1. Gatsby
