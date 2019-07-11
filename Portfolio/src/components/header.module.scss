@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+$color: rgb(0, 110, 255);
+
+
+$break-small: 900px;
+$break-large: 1200px;
+
+// .profile-pic {
+//   float: left;
+//   width: 250px;
+  
+//   @media screen and (min-width: $break-large) {
+//     float: right;
+//   }
+// }
+
+.head{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    box-sizing: border-box;
+    background-color: rgba(36, 37, 42, 0.5);
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    li, a, button{
+        font-weight: 600;
+        
+        color: #edf0f1;
+        text-decoration: none;
+    }
+    .logo{
+        font-family: 'Pacifico', cursive;
+        font-weight: 300;
+        font-size: 3rem;
+        text-transform: capitalize;
+        text-shadow: 4px 4px 1rem $color;
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 0rem 1.5rem;
+            letter-spacing: .3rem;
+            .link{
+                transition: all 0.3s ease 0s;
+                position: relative;
+            }
+            .link:hover{
+                color: $color;
+            }
+            .link::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: .5rem;
+                background-color: $color;
+                left: 0;
+                top: 1.8rem;
+                transform: scaleX(0);
+            }
+            .link:hover::after{
+                transform: scaleX(1);
+                transition: all ease-in-out 450ms;
+                box-shadow: 0px 4px 5rem $color;
+            }
+        }
+    }
+
+    button{
+        padding: 1rem 2.5rem;
+        background-color: rgba( $color , 0.4);
+        border: none;
+        border-radius: 5rem;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        margin-left: 7rem;
+        box-shadow: 0px 4px 4rem $color;
+    }
+
+    button:hover{
+        background-color: rgba($color, 0.8);
+    }
+
+
+   
+
+} 
+
+@media screen and (max-width: $break-small) {
+    .head{
+        display: block;
+        text-align: center;
+        .logo {
+            text-align: center;
+        }
+        ul{
+           
+        }
+        button{
+           
+        }
+    }
+        
+}
